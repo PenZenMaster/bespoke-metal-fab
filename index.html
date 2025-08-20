@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvo Stack – QA Hub</title>
+    <link rel="icon" href="https://salvometalworks.com/wp-content/uploads/2024/10/cropped-Salvo_CMYK_FullColor_Logo_Icon-32x32.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)" /></svg>');
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateX(0px) translateY(0px); }
+            50% { transform: translateX(-20px) translateY(-20px); }
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: #f8f9fa;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .page-card {
+            background: white;
+            border: 1px solid #e1e5e9;
+            border-radius: 12px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .page-card:hover {
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+            border-color: #667eea;
+        }
+        
+        .page-card:hover::before {
+            transform: scaleY(1);
+        }
+        
+        .page-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .page-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .page-link:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        
+        .page-url {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 8px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            background: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 6px;
+            word-break: break-all;
+        }
+        
+        .city-section {
+            margin-bottom: 40px;
+        }
+        
+        .city-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .logo {
+            max-height: 40px;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .page-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://salvometalworks.com/wp-content/uploads/2024/10/Salvo_RGB_FullColor_Logo-1024x371.png" alt="Salvo Metal Works" class="logo">
+            <h1>Salvo Metal Works - Forging Function with Metal Mastery</h1>
+            <p class="subtitle">Location-Based SEO Pages for Chicagoland Metal Works Services</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number">30</span>
+                <span class="stat-label">SEO Pages</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Target Cities</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Service Lines</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Schema Markup</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="city-section">
+                <h2 class="city-title">Naperville, IL</h2>
+                <div class="page-grid">
+                    <div class="page-card">
+                        <div class="page-title">Snow Guards in Naperville</div>
+                        <a href="entity_pages/naperville-snow-guards.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/6-pad-style-snow-guard/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Custom Metal Fabrication in Naperville</div>
+                        <a href="entity_pages/naperville-custom-metal-fabrication.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/contact/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Roof Accessories in Naperville</div>
+                        <a href="entity_pages/naperville-roof-accessories.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/501-slant-back-roof-vent/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Chimney Shrouds in Naperville</div>
+                        <a href="entity_pages/naperville-chimney-shrouds.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/600/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Cupolas in Naperville</div>
+                        <a href="entity_pages/naperville-cupolas.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/101-cupola/</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="city-section">
+                <h2 class="city-title">Aurora, IL</h2>
+                <div class="page-grid">
+                    <div class="page-card">
+                        <div class="page-title">Snow Guards in Aurora</div>
+                        <a href="entity_pages/aurora-snow-guards.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/15-pad-style-snow-guard/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Custom Metal Fabrication in Aurora</div>
+                        <a href="entity_pages/aurora-custom-metal-fabrication.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/contact/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Roof Accessories in Aurora</div>
+                        <a href="entity_pages/aurora-roof-accessories.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/502-slant-back-roof-vent/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Chimney Shrouds in Aurora</div>
+                        <a href="entity_pages/aurora-chimney-shrouds.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/601/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Cupolas in Aurora</div>
+                        <a href="entity_pages/aurora-cupolas.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/102-cupola/</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="city-section">
+                <h2 class="city-title">Lisle, IL</h2>
+                <div class="page-grid">
+                    <div class="page-card">
+                        <div class="page-title">Snow Guards in Lisle</div>
+                        <a href="entity_pages/lisle-snow-guards.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/15-e-s-retrofit-pad-style-snow-guard/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Custom Metal Fabrication in Lisle</div>
+                        <a href="entity_pages/lisle-custom-metal-fabrication.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/contact/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Roof Accessories in Lisle</div>
+                        <a href="entity_pages/lisle-roof-accessories.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/503-slant-back-roof-vent/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Chimney Shrouds in Lisle</div>
+                        <a href="entity_pages/lisle-chimney-shrouds.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/602/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Cupolas in Lisle</div>
+                        <a href="entity_pages/lisle-cupolas.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/103-cupola/</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="city-section">
+                <h2 class="city-title">Warrenville, IL</h2>
+                <div class="page-grid">
+                    <div class="page-card">
+                        <div class="page-title">Snow Guards in Warrenville</div>
+                        <a href="entity_pages/warrenville-snow-guards.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/pad-style-accessories/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Custom Metal Fabrication in Warrenville</div>
+                        <a href="entity_pages/warrenville-custom-metal-fabrication.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/contact/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Roof Accessories in Warrenville</div>
+                        <a href="entity_pages/warrenville-roof-accessories.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/504-roof-vent/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Chimney Shrouds in Warrenville</div>
+                        <a href="entity_pages/warrenville-chimney-shrouds.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/603/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Cupolas in Warrenville</div>
+                        <a href="entity_pages/warrenville-cupolas.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/104-cupola/</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="city-section">
+                <h2 class="city-title">Wheaton, IL</h2>
+                <div class="page-grid">
+                    <div class="page-card">
+                        <div class="page-title">Snow Guards in Wheaton</div>
+                        <a href="entity_pages/wheaton-snow-guards.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/6-pad-style-snow-guard/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Custom Metal Fabrication in Wheaton</div>
+                        <a href="entity_pages/wheaton-custom-metal-fabrication.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/contact/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Roof Accessories in Wheaton</div>
+                        <a href="entity_pages/wheaton-roof-accessories.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/505-roof-vent/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Chimney Shrouds in Wheaton</div>
+                        <a href="entity_pages/wheaton-chimney-shrouds.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/604/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Cupolas in Wheaton</div>
+                        <a href="entity_pages/wheaton-cupolas.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/105-cupola/</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="city-section">
+                <h2 class="city-title">Chicago, IL</h2>
+                <div class="page-grid">
+                    <div class="page-card">
+                        <div class="page-title">Snow Guards in Chicago</div>
+                        <a href="entity_pages/chicago-snow-guards.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/15-pad-style-snow-guard/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Custom Metal Fabrication in Chicago</div>
+                        <a href="entity_pages/chicago-custom-metal-fabrication.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/contact/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Roof Accessories in Chicago</div>
+                        <a href="entity_pages/chicago-roof-accessories.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/506-roof-vent/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Chimney Shrouds in Chicago</div>
+                        <a href="entity_pages/chicago-chimney-shrouds.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/605/</div>
+                    </div>
+                    <div class="page-card">
+                        <div class="page-title">Cupolas in Chicago</div>
+                        <a href="entity_pages/chicago-cupolas.html" target="_blank" class="page-link">View Page →</a>
+                        <div class="page-url">https://salvometalworks.com/product/101-cupola/</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>&copy; 2024 Salvo Metal Works. Professional SEO Cloud Stack for Local Search Optimization.</p>
+        </footer>
+    </div>
+</body>
+</html>
