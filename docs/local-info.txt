@@ -1,0 +1,33 @@
+  Recommendations to Reduce Risk:
+
+  1. Add unique local content - specific landmarks, local projects, area-specific building codes
+  2. Include local testimonials/case studies for each city
+  3. Add location-specific images if available
+  4. Vary the content structure between cities
+  5. Consider consolidating to fewer, more robust regional pages
+  
+Yes lets do that. Here are some sources for updating the pages information.
+ Google Business Profile Embed
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181472.99053882246!2d-88.23320394273736!3d41.77783195609183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e57cdd45d0985%3A0x9f48999634f8ab20!2sSalvo%20Metal%20Works!5e0!3m2!1sen!2sus!4v1755712676669!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+Remove the Lisle pages
+Use the following Wiki pages for information
+https://en.wikipedia.org/wiki/Aurora,_Illinois
+https://en.wikipedia.org/wiki/Chicago
+https://en.wikipedia.org/wiki/Naperville,_Illinois
+https://en.wikipedia.org/wiki/Warrenville,_Illinois
+https://en.wikipedia.org/wiki/Wheaton,_Illinois
+
+Use the following a embeds for the specific City pages
+
+Aurora
+<a title="Sea Cow, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Aurora,_Illinois_skyline.jpg"><img width="1024" alt="The Aurora, Illinois skyline." src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Aurora%2C_Illinois_skyline.jpg/1024px-Aurora%2C_Illinois_skyline.jpg?20220702013616"></a>
+
+Chicago<a title="xiquinhosilva, CC BY 2.0 &lt;https://creativecommons.org/licenses/by/2.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Chicago_Skyline_in_April_2024.jpg"><img width="1024" alt="Chicago Skyline in April 2024" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chicago_Skyline_in_April_2024.jpg/1024px-Chicago_Skyline_in_April_2024.jpg?20250424172955"></a>
+
+Naperville
+<a title="Sea Cow, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Naperville_IL_Skyline_2022.jpg"><img width="1024" alt="The skyline of Naperville, IL in 2022." src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Naperville_IL_Skyline_2022.jpg/1024px-Naperville_IL_Skyline_2022.jpg?20220722230545"></a>
+
+Warrenville
+<a title="Neatpete86 at English Wikipedia, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Warrenvillegrove.jpg"><img width="1024" alt="Warrenvillegrove" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Warrenvillegrove.jpg/1024px-Warrenvillegrove.jpg?20070330132139"></a>
+
+Wheaton<a title="Sea Cow, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Downtown_Wheaton_Skyline.jpg"><img width="1024" alt="The Skyline of downtown Wheaton, IL." src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Downtown_Wheaton_Skyline.jpg/1024px-Downtown_Wheaton_Skyline.jpg?20220331235821"></a>

@@ -1,0 +1,273 @@
+client:
+  business_name: Salvo Metal Works
+  domain: https://salvometalworks.com
+  industry: Metal Fabrication
+  description: Bespoke architectural metal fabrication. Salvo Metal Works is a family-owned
+    and operated manufacturer of roofing products. We pride ourselves on our ability
+    to customize all of our products to fit any project's needs. We offer a comprehensive
+    range of chimney shrouds, cupolas, dormers, finials, leader boxes, roof vents,
+    snow guards, and more.
+  tagline: Forging Function with Metal Mastery
+  hero_subtitle: Professional metal fabrication services you can trust - serving Chicago
+    and beyond!
+  years_in_business: Over 40 years
+  company_overview: 'Located in the heart of Naperville, Illinois, Salvo Metal Works
+    proudly serves residential and commercial clients throughout the Chicago metropolitan
+    area and beyond. Our central location allows us to efficiently serve clients across
+    the region while maintaining the personal touch that comes with being a local
+    business.
+
+
+    Whether you''re a homeowner looking to add distinctive copper elements to your
+    residence, an architect specifying custom metalwork for a commercial project,
+    or a contractor seeking a reliable fabrication partner, Salvo Metal Works has
+    the expertise and capacity to meet your needs.
+
+
+    Ready to transform your building with custom copper architectural elements? Contact
+    us today to discuss your project and discover how Salvo Metal Works can bring
+    your vision to life with exceptional craftsmanship and attention to detail.'
+  mission_statement: "Salvo Metal Works exists to forge function with metal mastery\u2014\
+    designing and crafting bespoke architectural metal that elevates beauty, improves\
+    \ performance, and lasts for generations. We partner with architects, builders,\
+    \ and discerning homeowners to deliver precision-engineered cupolas, finials,\
+    \ dormers, roof vents, chimney shrouds, leader boxes, and snow guards that blend\
+    \ old-world craftsmanship with modern fabrication. Our mission is to protect and\
+    \ enhance the built environment through meticulous design, premium materials,\
+    \ and relentless attention to detail\u2014delivered on time, to spec, and built\
+    \ to outlast the roof beneath it."
+  service_guarantee: ''
+  service_area_description: ''
+  why_choose_us:
+  - title: Unmatched Expertise
+    description: Our team brings years of experience in metal fabrication, understanding
+      the unique challenges and opportunities in our field. We stay current with the
+      latest techniques while honoring proven methods that deliver reliable results.
+  - title: Custom Design and Engineering
+    description: Every project is unique, and we approach each one with fresh perspective
+      and creative problem-solving. Our team works closely with clients to understand
+      their vision and translate it into practical, effective solutions.
+  - title: Quality Materials and Craftsmanship
+    description: We use only the finest materials and maintain the highest standards
+      of workmanship. Our commitment to quality ensures that every project meets our
+      exacting standards and exceeds client expectations.
+  - title: Comprehensive Service
+    description: From initial consultation and planning through completion and follow-up,
+      we provide comprehensive service that makes the process smooth and stress-free
+      for our clients.
+  company_stats:
+    RoofingDirect snapshot: 4.7/5
+  contact:
+    name: Customer Service
+    phone: +1-866-713-3396
+    address:
+      street: 566 W 5th Ave
+      city: Naperville
+      state: IL
+      zip_code: '60563'
+      country: United States
+    email: info@salvometalworks.com
+    business_hours:
+      monday: 7:30 AM - 4:30 PM
+      tuesday: 7:30 AM - 4:30 PM
+      wednesday: 7:30 AM - 4:30 PM
+      thursday: 7:30 AM - 4:30 PM
+      friday: 7:30 AM - 4:30 PM
+      saturday: 9:00 AM - 4:00 PM
+      sunday: Closed
+    emergency_phone: ''
+    office_phone: ''
+    mobile_phone: ''
+    fax_number: ''
+    response_time_promise: ''
+    contact_preference: ''
+    additional_locations: []
+  branding:
+    primary_color: '#bf062f'
+    secondary_color: '#fe9e1f'
+    font_family: Arial, sans-serif
+    logo_url: https://salvometalworks.com/wp-content/uploads/2024/10/Salvo_RGB_FullColor_Logo-2048x742.png
+  social_media:
+    facebook: https://www.facebook.com/SalvoMetalWorks
+    linkedin: https://www.linkedin.com/company/salvometalworks/
+    instagram: https://www.instagram.com/salvometalworks/
+    youtube: https://www.youtube.com/@salvometalworks
+  google_business_profile:
+    embed_code: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205664.07488490682!2d-88.3291328555474!3d41.77874305321832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e57cdd45d0985%3A0x9f48999634f8ab20!2sSalvo%20Metal%20Works!5e0!3m2!1sen!2sus!4v1755562750597!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  pages:
+  - title: Home
+    slug: index
+    primary_keyword: metal fabrication
+    secondary_keywords:
+    - salvo metal works
+    - local business
+  offerings: []
+  faq: []
+  target_cities:
+  - Chicago
+  - Bellwood, Illinois
+  city_pages:
+  - city_name: Chicago
+    state: ''
+    slug: chicago
+    title: "Chicago \u2014 Custom Architectural Metal"
+    meta_description: "Salvo Metal Works serves Chicago with bespoke architectural\
+      \ metal\u2014custom cupolas, dormers, finials, roof vents & snow guards\u2014\
+      built for beauty & durability."
+    primary_keyword: architectural metal fabrication Chicago
+    secondary_keywords: []
+    hero_title: "Chicago \u2014 Custom Architectural Metal Fabrication"
+    breadcrumbs:
+    - Home
+    - Locations
+    - Chicago
+    about_city: "Chicago sits on the southwest shore of Lake Michigan and is known\
+      \ worldwide for architecture, arts, and industry. Often called the birthplace\
+      \ of the modern skyscraper, the city\u2019s skyline mixes early steel-frame\
+      \ innovation with contemporary supertalls, museums, parks, and miles of lakefront.\
+      \ The result is a dynamic, design-forward metropolis where buildings matter\u2014\
+      and details matter even more.\n\nNeighborhoods give Chicago its character. The\
+      \ Loop and River North hum with commerce and culture; the West Loop, Fulton\
+      \ Market, and South Loop blend historic warehouses with new residential and\
+      \ hospitality; the Near North, Old Town, and Lincoln Park bring classic streetscapes.\
+      \ Farther south and west, places like Hyde Park, Bronzeville, Pilsen, and Bridgeport\
+      \ showcase deep history, universities, and thriving arts scenes. Across all\
+      \ of it, thoughtful materials and well-executed craftsmanship are part of the\
+      \ city\u2019s DNA.\n\nWhy architectural metal matters here\n\nFour-season weather,\
+      \ lake-effect snow, wind, and freeze\u2013thaw cycles make performance non-negotiable.\
+      \ Copper, zinc, stainless, and powder-coated steel excel when designed for proper\
+      \ drainage, expansion, and concealed attachment. From cupolas and dormers to\
+      \ finials, leader boxes, roof vents, and snow guards, well-detailed metal elements\
+      \ protect envelopes, manage water, and elevate sightlines\u2014at street level\
+      \ and from fifty stories up.\n\nNeighborhoods and districts we serve\n\n* The\
+      \ Loop, River North, Streeterville\n* West Loop, Fulton Market, South Loop\n\
+      * Gold Coast, Old Town, Lincoln Park, Lakeview\n* Wicker Park, Bucktown, Logan\
+      \ Square\n* Hyde Park, Bronzeville, Bridgeport, Pilsen\n\nPlanning a project\
+      \ in Chicago? Specify premium details that look intentional and last. Partner\
+      \ with Salvo Metal Works\u2014your expert in architectural metal fabrication\
+      \ Chicago."
+    city_image:
+      image_url: https://upload.wikimedia.org/wikipedia/commons/a/a5/Chicago_River_ferry_b.jpg
+      alt_text: Chicago River
+      caption: "Bespoke Architectural Metal for Chicago\u2014Beauty with Backbone"
+      credit: ''
+      source: Wikipedia
+    seo_content_title: Architectural Metal Fabrication Chicago | Salvo Metal Works
+    seo_content_body: "Chicago doesn\u2019t just admire architecture\u2014it lives\
+      \ and breathes it. From lakefront wind to freeze\u2013thaw cycles, this city\
+      \ demands details that perform as well as they look. That\u2019s where **Salvo\
+      \ Metal Works** earns its keep. We blend studio-grade craft with jobsite pragmatism,\
+      \ delivering architectural metal that slots cleanly into your drawings, coordinates\
+      \ smoothly in the field, and holds its line for decades. If you\u2019re searching\
+      \ for *architectural metal fabrication Chicago*, you\u2019re in the right shop.\n\
+      \nWe start with process, because process is what protects design intent. Expect\
+      \ precise shop drawings, responsive RFIs, and submittals that answer questions\
+      \ instead of creating them. Our fabrications consider drainage paths, expansion\
+      \ and contraction, load paths, and attachment strategies from day one\u2014\
+      so your elevations read intentional from five feet and fifty. Copper, zinc,\
+      \ stainless, or powder-coated aluminum: we\u2019ll recommend the right alloy\
+      \ and thickness for the site, the fa\xE7ade, and the budget.\n\nNeed a statement\
+      \ piece that still behaves like building science? Our [custom cupolas](https://salvometalworks.com/product-category/custom-cupolas/)\
+      \ bring proportion, shadow play, and ventilation together without telegraphing\
+      \ fasteners or compromising the roof. We design for live loads, specify baffles\
+      \ and screens where appropriate, and finish with patinas or coatings that complement\
+      \ both historic districts and new-build glass. Whether it\u2019s River North\
+      \ contemporary or Gold Coast classic, a Salvo cupola looks born to the plan\
+      \ set.\n\nWater management is a Chicago sport. Our [custom leader boxes](https://salvometalworks.com/product-category/custom-leader-boxes/)\
+      \ turn downspouts into deliberate design moves, mitigating splash and icing\
+      \ while keeping fascia lines crisp. Match profiles to adjacent trim, integrate\
+      \ leaf control, and choose finishes that won\u2019t flinch at lake-effect winters.\
+      \ Pair them with roof-edge treatments and you get a system that reads like architecture,\
+      \ not an afterthought.\n\nUp top, airflow matters as much as silhouette. Our\
+      \ [custom roof vents](https://salvometalworks.com/product-category/custom-roof-vents/)\
+      \ balance exhaust performance with elevation discipline\u2014concealed fasteners,\
+      \ smart flashing, and expansion allowances baked in. Need a family of vents\
+      \ that scale across a mixed-use stack? We\u2019ll prototype proportions so the\
+      \ composition stays coherent from podium to penthouse.\n\nNothing frames a skyline\
+      \ detail like the right punctuation. Our [custom finials](https://salvometalworks.com/product-category/custom-finials/)\
+      \ bring that quiet \u201Cof course\u201D to steeples, ridges, and parapets.\
+      \ We tune height, massing, and base geometry to your roof pitch and sightlines,\
+      \ then fabricate for wind resistance and corrosion control. The result is a\
+      \ crown that feels inevitable\u2014as if the building always wanted it.\n\n\
+      Chicago winters call for pragmatism you can\u2019t Photoshop away. Our [custom\
+      \ snow guards](https://salvometalworks.com/product-category/custom-snow-guards/)\
+      \ are engineered for the live loads and sliding snow common on metal and slate\
+      \ roofs. We model spacing, specify the right attachment for the substrate, and\
+      \ align patterns so they read as intentional texture rather than clutter. Safety,\
+      \ envelope protection, and visual order in one move.\n\nFireplaces deserve more\
+      \ than a cap\u2014they deserve a composition. Our [custom chimney shrouds](https://salvometalworks.com/product-category/custom-chimney-shrouds/)\
+      \ solve for draft, animal intrusion, and water while elevating the roof profile.\
+      \ We coordinate with liners and code, manage thermal expansion at the base,\
+      \ and finish with seams that actually earn their keep. On heritage restorations\
+      \ or contemporary builds, the shroud becomes a signature, not a band-aid.\n\n\
+      Dormers can be fussy\u2014unless they\u2019re designed for the envelope they\
+      \ join. Our [custom dormers](https://salvometalworks.com/product-category/custom-dormers/)\
+      \ integrate with standing-seam and shingle assemblies, respect drainage planes,\
+      \ and maintain trim reveals that make carpenters and inspectors happy. Inside,\
+      \ you get daylight and ventilation; outside, you get cadence and rhythm that\
+      \ sharpen the fa\xE7ade.\n\nThe through-line: collaboration. We speak GC, coordinate\
+      \ with roofing subs, and keep timelines honest. Need value engineering without\
+      \ aesthetic compromise? We\u2019ll present options\u2014material swaps, gauge\
+      \ tweaks, joint strategies\u2014that preserve proportion and shadow while meeting\
+      \ the budget. Field templates, mockups, and clear install notes mean fewer surprises\
+      \ on the lift and fewer callbacks in January.\n\nChicago is a city of neighborhoods,\
+      \ and we work them all: Loop and River North commercial, West Loop adaptive\
+      \ reuse, Hyde Park institutional, and residential fabric from Lincoln Park to\
+      \ Beverly. Each site brings its own constraints\u2014historic review, coastal\
+      \ winds, intricate sightlines\u2014and we treat those as design inputs, not\
+      \ obstacles. Your drawings stay your drawings; our job is to make them buildable,\
+      \ durable, and beautiful.\n\nIf you\u2019re specifying in Chicago and want metal\
+      \ details that carry their weight\u2014literally and figuratively\u2014bring\
+      \ Salvo in early. We\u2019ll help you protect the envelope, honor the line,\
+      \ and deliver a finish that holds up to winter, time, and critical eyes.\n\n\
+      **Ready to talk details?** Let\u2019s review your set, align on materials and\
+      \ finish, and turn your concept into a submittal that sails through approval\u2014\
+      then a build that goes in cleanly, on schedule, and exactly as drawn."
+    places_of_interest:
+    - name: Millenium Park
+      embed_url: ''
+    city_faq:
+    - question: Why Choose Salvo Metal Works for you next historical restoration project?
+      answer: "When architects need bespoke metal that looks like sculpture and behaves\
+        \ like building science, they call Salvo Metal Works. This team blends studio-grade\
+        \ craftsmanship with jobsite pragmatism\u2014think custom cupolas, dormers,\
+        \ finials, leader boxes, roof vents, and snow guards engineered to live gracefully\
+        \ on real roofs in real weather.\n\nWhat sets Salvo apart isn\u2019t just\
+        \ copper, zinc, or powder-coated steel; it\u2019s process. You\u2019ll get\
+        \ clean shop drawings, clear tolerances, and submittals that actually answer\
+        \ questions. Need a quick RFI turnaround, a field template, or a tweak for\
+        \ tricky substrate transitions? Done. Salvo builds for performance first\u2014\
+        proper drainage paths, smart attachment systems, and expansion allowances\u2014\
+        then finishes with the kind of patina and proportion that makes elevations\
+        \ sing."
+    featured_products: []
+    city_map_embed: ''
+    service_area_note: ''
+  - city_name: Bellwood, Illinois
+    state: ''
+    slug: bellwood-illinois
+    title: "Bellwood, Illinois \u2014 Custom Architectural Metal"
+    meta_description: ''
+    primary_keyword: ''
+    secondary_keywords: []
+    hero_title: "Bellwood, Illinois \u2014 Custom Architectural Metal Fabrication"
+    breadcrumbs:
+    - Home
+    - Locations
+    - Bellwood, Illinois
+    about_city: ''
+    city_image:
+      image_url: ''
+      alt_text: ''
+      caption: ''
+      credit: ''
+      source: Wikipedia
+    seo_content_title: ''
+    seo_content_body: ''
+    places_of_interest: []
+    city_faq: []
+    featured_products: []
+    city_map_embed: ''
+    service_area_note: ''
